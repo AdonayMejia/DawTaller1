@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" mb-5" >
+      <a class="navbar-brand"><img src="img/JavaScript.jpg" class="img-fluid" width="90px" height="80px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+          <a class="nav-link" href="Ejercicio1.html">Ejercicio 1</a>
+          </li>
+    
+          <li class="nav-item">
+          <a class="nav-link" href="Ejercicio2.html">Ejercicio 2</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+
+      <div class="container mt-5">
+    <header>
+      <h1>Registro de biblioteca</h1>
+    </header>
+    <form action="#">
+      <input class="form-control" type="text" placeholder="Libro ID" name="" id="txtisbn">
+      <input class="form-control" type="text" name="" placeholder="Titulo" id="txttitulo">
+      <input class="form-control" type="text" name="" placeholder="Autor" id="txtautor">
+      <input class="form-control" type="text" name="" placeholder="Apellido" id="txtapellido">
+      <input class="form-control" type="text" name="" placeholder="Categoria" id="txtcategoria">
+      <input class="form-control" type="text" name="" placeholder="Precio" id="txtprecio">
+      <input class="btn btn-primary" type="button" value="Guardar" onclick="guardar_libro()">
+      <h4>Selecione una imagen</h4>
+      <input id="fileInput" type="file" accept="image/*" multiple="false" value="Select image">
+      <input id="button" type="button" value="Click para agrear la imagen">   
+      <hr>
+      
+    </form>
+    <div class="row">
+            <div class=" col sm-12 col-md-2 fs-6">Libro ID</div>
+            <div class="col-sm-12 col-md-2 fs-6">Titulo</div>
+            <div class="col-sm-12 col-md-2 fs-6">Autor</div>
+            <div class="col-sm-12 col-md-2 fs-6">Apellido</div>
+            <div class="col-sm-12 col-md-2 fs-6">Categoria</div>
+            <div class="col-sm-12 col-md-1 fs-6">Precio</div>
+            <div class="col-md-1"><div id="myImages"></div></div>
+        <div id="datos"></div>
+    </div>
+      </div>
+
+    <script src="js/album.js"></script>
+    <script src="js/biblio.js"></script>
+    <footer class="text-center text-white fixed-bottom bg-dark">
+      <div class="container p-4"></div>
+      <div class="text-center p-3 bg-dark">
+      <h5>Kevin Adonay Martínez Cerón-MC200314</h5>
+      <h5>Stanley Adonay Mejia Amaya-MA212116</h5>
+      </div>
+      
+      </footer>
+  </body>
+</html>
